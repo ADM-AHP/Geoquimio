@@ -34,6 +34,7 @@ url_theme2 = dbc.themes.DARKLY
 FONT_AWESOME = ["https://use.fontawesome.com/releases/v5.10.2/css/all.css"]
 
 app = dash.Dash(__name__, pages_folder="pages", use_pages=True, external_stylesheets=FONT_AWESOME, suppress_callback_exceptions=True)
+server = app.server
 
 # Configuração global para adicionar Font Awesome
 app.index_string = '''
@@ -163,4 +164,4 @@ def render_page_content(pathname):
 
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run_server(debug=False)
