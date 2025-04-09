@@ -80,7 +80,8 @@ outra = [
 
 
 # Carregando os dados
-df = pd.read_excel("/Users/fabri/Documents/Codigo/Fabão/TabelaErica_Final.xlsx", decimal= ",")
+
+df = pd.read_excel("data/TabelaErica_Final.xlsx", decimal=",")
 
 #missing_columns = df.columns[df.isnull().sum() > 0]
 #imputer = SimpleImputer(strategy='median')

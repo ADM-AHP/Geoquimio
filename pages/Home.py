@@ -38,7 +38,7 @@ app.index_string = '''
 </html>
 '''
 
-df = pd.read_excel("/Users/fabri/Documents/Codigo/Fabão/TabelaErica_Final.xlsx", decimal= ",")
+df = pd.read_excel("data/TabelaErica_Final.xlsx", decimal=",")
 
 app.title = "Análise Geoquímica"
 
